@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.mrcIngreso = new System.Windows.Forms.GroupBox();
-            this.lblDeposito = new System.Windows.Forms.Label();
             this.txtDeposito = new System.Windows.Forms.TextBox();
+            this.lblDeposito = new System.Windows.Forms.Label();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
-            this.lblAlquiler = new System.Windows.Forms.Label();
-            this.lblImpuestos = new System.Windows.Forms.Label();
-            this.lblComida = new System.Windows.Forms.Label();
-            this.txtAlquiler = new System.Windows.Forms.TextBox();
-            this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtComida = new System.Windows.Forms.TextBox();
+            this.txtImpuestos = new System.Windows.Forms.TextBox();
+            this.txtAlquiler = new System.Windows.Forms.TextBox();
+            this.lblComida = new System.Windows.Forms.Label();
+            this.lblImpuestos = new System.Windows.Forms.Label();
+            this.lblAlquiler = new System.Windows.Forms.Label();
             this.mrcGastosVarios = new System.Windows.Forms.GroupBox();
-            this.lblMonto = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
+            this.lblMonto = new System.Windows.Forms.Label();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
+            this.lblSaldoRestante = new System.Windows.Forms.Label();
             this.mrcIngreso.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcGastosVarios.SuspendLayout();
@@ -61,6 +62,14 @@
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "INGRESO";
             // 
+            // txtDeposito
+            // 
+            this.txtDeposito.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeposito.Location = new System.Drawing.Point(94, 40);
+            this.txtDeposito.Name = "txtDeposito";
+            this.txtDeposito.Size = new System.Drawing.Size(137, 26);
+            this.txtDeposito.TabIndex = 1;
+            // 
             // lblDeposito
             // 
             this.lblDeposito.AutoSize = true;
@@ -71,14 +80,6 @@
             this.lblDeposito.Size = new System.Drawing.Size(63, 16);
             this.lblDeposito.TabIndex = 0;
             this.lblDeposito.Text = "DEPOSITO";
-            // 
-            // txtDeposito
-            // 
-            this.txtDeposito.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeposito.Location = new System.Drawing.Point(94, 40);
-            this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(137, 26);
-            this.txtDeposito.TabIndex = 1;
             // 
             // mrcGastosFijos
             // 
@@ -97,27 +98,29 @@
             this.mrcGastosFijos.TabStop = false;
             this.mrcGastosFijos.Text = "GASTOS FIJOS";
             // 
-            // lblAlquiler
+            // txtComida
             // 
-            this.lblAlquiler.AutoSize = true;
-            this.lblAlquiler.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlquiler.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAlquiler.Location = new System.Drawing.Point(26, 33);
-            this.lblAlquiler.Name = "lblAlquiler";
-            this.lblAlquiler.Size = new System.Drawing.Size(63, 16);
-            this.lblAlquiler.TabIndex = 0;
-            this.lblAlquiler.Text = "ALQUILER";
+            this.txtComida.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComida.Location = new System.Drawing.Point(106, 98);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(137, 26);
+            this.txtComida.TabIndex = 5;
             // 
-            // lblImpuestos
+            // txtImpuestos
             // 
-            this.lblImpuestos.AutoSize = true;
-            this.lblImpuestos.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImpuestos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblImpuestos.Location = new System.Drawing.Point(25, 68);
-            this.lblImpuestos.Name = "lblImpuestos";
-            this.lblImpuestos.Size = new System.Drawing.Size(72, 16);
-            this.lblImpuestos.TabIndex = 1;
-            this.lblImpuestos.Text = "IMPUESTOS";
+            this.txtImpuestos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpuestos.Location = new System.Drawing.Point(106, 63);
+            this.txtImpuestos.Name = "txtImpuestos";
+            this.txtImpuestos.Size = new System.Drawing.Size(137, 26);
+            this.txtImpuestos.TabIndex = 4;
+            // 
+            // txtAlquiler
+            // 
+            this.txtAlquiler.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlquiler.Location = new System.Drawing.Point(106, 28);
+            this.txtAlquiler.Name = "txtAlquiler";
+            this.txtAlquiler.Size = new System.Drawing.Size(137, 26);
+            this.txtAlquiler.TabIndex = 3;
             // 
             // lblComida
             // 
@@ -130,29 +133,27 @@
             this.lblComida.TabIndex = 2;
             this.lblComida.Text = "COMIDA";
             // 
-            // txtAlquiler
+            // lblImpuestos
             // 
-            this.txtAlquiler.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlquiler.Location = new System.Drawing.Point(106, 28);
-            this.txtAlquiler.Name = "txtAlquiler";
-            this.txtAlquiler.Size = new System.Drawing.Size(137, 26);
-            this.txtAlquiler.TabIndex = 3;
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImpuestos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblImpuestos.Location = new System.Drawing.Point(25, 68);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(72, 16);
+            this.lblImpuestos.TabIndex = 1;
+            this.lblImpuestos.Text = "IMPUESTOS";
             // 
-            // txtImpuestos
+            // lblAlquiler
             // 
-            this.txtImpuestos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpuestos.Location = new System.Drawing.Point(106, 63);
-            this.txtImpuestos.Name = "txtImpuestos";
-            this.txtImpuestos.Size = new System.Drawing.Size(137, 26);
-            this.txtImpuestos.TabIndex = 4;
-            // 
-            // txtComida
-            // 
-            this.txtComida.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComida.Location = new System.Drawing.Point(106, 98);
-            this.txtComida.Name = "txtComida";
-            this.txtComida.Size = new System.Drawing.Size(137, 26);
-            this.txtComida.TabIndex = 5;
+            this.lblAlquiler.AutoSize = true;
+            this.lblAlquiler.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlquiler.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAlquiler.Location = new System.Drawing.Point(26, 33);
+            this.lblAlquiler.Name = "lblAlquiler";
+            this.lblAlquiler.Size = new System.Drawing.Size(63, 16);
+            this.lblAlquiler.TabIndex = 0;
+            this.lblAlquiler.Text = "ALQUILER";
             // 
             // mrcGastosVarios
             // 
@@ -167,6 +168,14 @@
             this.mrcGastosVarios.TabStop = false;
             this.mrcGastosVarios.Text = "GASTOS  VARIOS";
             // 
+            // txtMonto
+            // 
+            this.txtMonto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(106, 36);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(137, 26);
+            this.txtMonto.TabIndex = 1;
+            // 
             // lblMonto
             // 
             this.lblMonto.AutoSize = true;
@@ -177,14 +186,6 @@
             this.lblMonto.Size = new System.Drawing.Size(46, 16);
             this.lblMonto.TabIndex = 0;
             this.lblMonto.Text = "MONTO";
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.Location = new System.Drawing.Point(106, 36);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(137, 26);
-            this.txtMonto.TabIndex = 1;
             // 
             // cmdCancelar
             // 
@@ -208,12 +209,23 @@
             this.cmdGrabar.Text = "GRABAR";
             this.cmdGrabar.UseVisualStyleBackColor = false;
             // 
+            // lblSaldoRestante
+            // 
+            this.lblSaldoRestante.AutoSize = true;
+            this.lblSaldoRestante.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldoRestante.Location = new System.Drawing.Point(33, 500);
+            this.lblSaldoRestante.Name = "lblSaldoRestante";
+            this.lblSaldoRestante.Size = new System.Drawing.Size(209, 20);
+            this.lblSaldoRestante.TabIndex = 5;
+            this.lblSaldoRestante.Text = "Saldo Restante $__________";
+            // 
             // formGestionDeGastosMensuales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(429, 522);
+            this.ClientSize = new System.Drawing.Size(429, 541);
+            this.Controls.Add(this.lblSaldoRestante);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.mrcGastosVarios);
@@ -228,6 +240,7 @@
             this.mrcGastosVarios.ResumeLayout(false);
             this.mrcGastosVarios.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -248,6 +261,7 @@
         private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Button cmdGrabar;
+        private System.Windows.Forms.Label lblSaldoRestante;
     }
 }
 
