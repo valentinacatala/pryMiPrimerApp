@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace pryMiPrimerApp
 {
-    public partial class formGestionDeGastosMensuales : Form
+    public partial class frmAlacena : Form
     {
-        public formGestionDeGastosMensuales()
+        public frmAlacena()
         {
             InitializeComponent();
         }
 
-        private void formGestionDeGastosMensuales_Load(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

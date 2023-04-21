@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formGestionDeGastosMensuales));
             this.mrcIngreso = new System.Windows.Forms.GroupBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.lblDeposito = new System.Windows.Forms.Label();
@@ -57,7 +58,7 @@
             this.mrcIngreso.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.mrcIngreso.Location = new System.Drawing.Point(33, 12);
             this.mrcIngreso.Name = "mrcIngreso";
-            this.mrcIngreso.Size = new System.Drawing.Size(366, 100);
+            this.mrcIngreso.Size = new System.Drawing.Size(328, 100);
             this.mrcIngreso.TabIndex = 0;
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "INGRESO";
@@ -65,7 +66,7 @@
             // txtDeposito
             // 
             this.txtDeposito.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeposito.Location = new System.Drawing.Point(94, 40);
+            this.txtDeposito.Location = new System.Drawing.Point(106, 36);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(137, 26);
             this.txtDeposito.TabIndex = 1;
@@ -75,7 +76,7 @@
             this.lblDeposito.AutoSize = true;
             this.lblDeposito.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeposito.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDeposito.Location = new System.Drawing.Point(25, 42);
+            this.lblDeposito.Location = new System.Drawing.Point(27, 42);
             this.lblDeposito.Name = "lblDeposito";
             this.lblDeposito.Size = new System.Drawing.Size(63, 16);
             this.lblDeposito.TabIndex = 0;
@@ -93,7 +94,7 @@
             this.mrcGastosFijos.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.mrcGastosFijos.Location = new System.Drawing.Point(33, 141);
             this.mrcGastosFijos.Name = "mrcGastosFijos";
-            this.mrcGastosFijos.Size = new System.Drawing.Size(366, 140);
+            this.mrcGastosFijos.Size = new System.Drawing.Size(328, 140);
             this.mrcGastosFijos.TabIndex = 1;
             this.mrcGastosFijos.TabStop = false;
             this.mrcGastosFijos.Text = "GASTOS FIJOS";
@@ -163,7 +164,7 @@
             this.mrcGastosVarios.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.mrcGastosVarios.Location = new System.Drawing.Point(33, 318);
             this.mrcGastosVarios.Name = "mrcGastosVarios";
-            this.mrcGastosVarios.Size = new System.Drawing.Size(366, 100);
+            this.mrcGastosVarios.Size = new System.Drawing.Size(328, 100);
             this.mrcGastosVarios.TabIndex = 2;
             this.mrcGastosVarios.TabStop = false;
             this.mrcGastosVarios.Text = "GASTOS  VARIOS";
@@ -191,7 +192,7 @@
             // 
             this.cmdCancelar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(159, 443);
+            this.cmdCancelar.Location = new System.Drawing.Point(125, 443);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(117, 35);
             this.cmdCancelar.TabIndex = 3;
@@ -202,7 +203,7 @@
             // 
             this.cmdGrabar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cmdGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGrabar.Location = new System.Drawing.Point(282, 443);
+            this.cmdGrabar.Location = new System.Drawing.Point(244, 443);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(117, 35);
             this.cmdGrabar.TabIndex = 4;
@@ -224,15 +225,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(429, 541);
+            this.ClientSize = new System.Drawing.Size(377, 541);
             this.Controls.Add(this.lblSaldoRestante);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.mrcGastosVarios);
             this.Controls.Add(this.mrcGastosFijos);
             this.Controls.Add(this.mrcIngreso);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formGestionDeGastosMensuales";
             this.Text = "Gestion de Gastos Mensuales";
+            this.Load += new System.EventHandler(this.formGestionDeGastosMensuales_Load);
             this.mrcIngreso.ResumeLayout(false);
             this.mrcIngreso.PerformLayout();
             this.mrcGastosFijos.ResumeLayout(false);

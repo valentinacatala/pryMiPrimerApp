@@ -16,7 +16,7 @@ namespace pryMiPrimerApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formGestionDeGastosMensuales());
+            Application.Run(new frmPrincipal());
         }
     }
 }
