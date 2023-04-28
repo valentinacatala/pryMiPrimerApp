@@ -43,8 +43,8 @@
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.lblMonto = new System.Windows.Forms.Label();
             this.cmdCancelar = new System.Windows.Forms.Button();
-            this.cmdGrabar = new System.Windows.Forms.Button();
-            this.lblSaldoRestante = new System.Windows.Forms.Label();
+            this.cmdCalcular = new System.Windows.Forms.Button();
+            this.lblCalculo = new System.Windows.Forms.Label();
             this.mrcIngreso.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcGastosVarios.SuspendLayout();
@@ -199,26 +199,27 @@
             this.cmdCancelar.Text = "CANCELAR";
             this.cmdCancelar.UseVisualStyleBackColor = false;
             // 
-            // cmdGrabar
+            // cmdCalcular
             // 
-            this.cmdGrabar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.cmdGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGrabar.Location = new System.Drawing.Point(244, 443);
-            this.cmdGrabar.Name = "cmdGrabar";
-            this.cmdGrabar.Size = new System.Drawing.Size(117, 35);
-            this.cmdGrabar.TabIndex = 4;
-            this.cmdGrabar.Text = "GRABAR";
-            this.cmdGrabar.UseVisualStyleBackColor = false;
+            this.cmdCalcular.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCalcular.Location = new System.Drawing.Point(244, 443);
+            this.cmdCalcular.Name = "cmdCalcular";
+            this.cmdCalcular.Size = new System.Drawing.Size(117, 35);
+            this.cmdCalcular.TabIndex = 4;
+            this.cmdCalcular.Text = "CALCULAR";
+            this.cmdCalcular.UseVisualStyleBackColor = false;
+            this.cmdCalcular.Click += new System.EventHandler(this.cmdCalcular_Click);
             // 
-            // lblSaldoRestante
+            // lblCalculo
             // 
-            this.lblSaldoRestante.AutoSize = true;
-            this.lblSaldoRestante.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldoRestante.Location = new System.Drawing.Point(33, 500);
-            this.lblSaldoRestante.Name = "lblSaldoRestante";
-            this.lblSaldoRestante.Size = new System.Drawing.Size(209, 20);
-            this.lblSaldoRestante.TabIndex = 5;
-            this.lblSaldoRestante.Text = "Saldo Restante $__________";
+            this.lblCalculo.AutoSize = true;
+            this.lblCalculo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalculo.Location = new System.Drawing.Point(33, 500);
+            this.lblCalculo.Name = "lblCalculo";
+            this.lblCalculo.Size = new System.Drawing.Size(18, 20);
+            this.lblCalculo.TabIndex = 5;
+            this.lblCalculo.Text = "   ";
             // 
             // formGestionDeGastosMensuales
             // 
@@ -226,8 +227,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(377, 541);
-            this.Controls.Add(this.lblSaldoRestante);
-            this.Controls.Add(this.cmdGrabar);
+            this.Controls.Add(this.lblCalculo);
+            this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.mrcGastosVarios);
             this.Controls.Add(this.mrcGastosFijos);
@@ -263,8 +264,8 @@
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Button cmdGrabar;
-        private System.Windows.Forms.Label lblSaldoRestante;
+        private System.Windows.Forms.Button cmdCalcular;
+        private System.Windows.Forms.Label lblCalculo;
     }
 }
 
