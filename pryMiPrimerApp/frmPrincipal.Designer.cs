@@ -35,11 +35,10 @@
             // cmdAlacena
             // 
             this.cmdAlacena.BackColor = System.Drawing.Color.BurlyWood;
-            this.cmdAlacena.Font = new System.Drawing.Font("Baby Pumpkin", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAlacena.Location = new System.Drawing.Point(13, 29);
-            this.cmdAlacena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAlacena.Location = new System.Drawing.Point(10, 24);
             this.cmdAlacena.Name = "cmdAlacena";
-            this.cmdAlacena.Size = new System.Drawing.Size(566, 198);
+            this.cmdAlacena.Size = new System.Drawing.Size(424, 161);
             this.cmdAlacena.TabIndex = 0;
             this.cmdAlacena.Text = "ALACENA";
             this.cmdAlacena.UseVisualStyleBackColor = false;
@@ -48,11 +47,10 @@
             // cmdFinanzas
             // 
             this.cmdFinanzas.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.cmdFinanzas.Font = new System.Drawing.Font("Baby Pumpkin", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdFinanzas.Location = new System.Drawing.Point(13, 256);
-            this.cmdFinanzas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdFinanzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdFinanzas.Location = new System.Drawing.Point(10, 208);
             this.cmdFinanzas.Name = "cmdFinanzas";
-            this.cmdFinanzas.Size = new System.Drawing.Size(566, 198);
+            this.cmdFinanzas.Size = new System.Drawing.Size(424, 161);
             this.cmdFinanzas.TabIndex = 1;
             this.cmdFinanzas.Text = "FINANZAS";
             this.cmdFinanzas.UseVisualStyleBackColor = false;
@@ -60,14 +58,14 @@
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 478);
+            this.ClientSize = new System.Drawing.Size(446, 388);
             this.Controls.Add(this.cmdFinanzas);
             this.Controls.Add(this.cmdAlacena);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
 
         }
