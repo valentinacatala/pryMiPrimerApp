@@ -65,7 +65,7 @@
             // 
             // txtDeposito
             // 
-            this.txtDeposito.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeposito.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeposito.Location = new System.Drawing.Point(106, 36);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(137, 26);
@@ -101,7 +101,7 @@
             // 
             // txtComida
             // 
-            this.txtComida.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComida.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComida.Location = new System.Drawing.Point(106, 98);
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(137, 26);
@@ -109,7 +109,7 @@
             // 
             // txtImpuestos
             // 
-            this.txtImpuestos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpuestos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpuestos.Location = new System.Drawing.Point(106, 63);
             this.txtImpuestos.Name = "txtImpuestos";
             this.txtImpuestos.Size = new System.Drawing.Size(137, 26);
@@ -117,7 +117,7 @@
             // 
             // txtAlquiler
             // 
-            this.txtAlquiler.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlquiler.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlquiler.Location = new System.Drawing.Point(106, 28);
             this.txtAlquiler.Name = "txtAlquiler";
             this.txtAlquiler.Size = new System.Drawing.Size(137, 26);
@@ -171,7 +171,7 @@
             // 
             // txtMonto
             // 
-            this.txtMonto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMonto.Location = new System.Drawing.Point(106, 36);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(137, 26);
@@ -214,10 +214,10 @@
             // lblCalculo
             // 
             this.lblCalculo.AutoSize = true;
-            this.lblCalculo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalculo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalculo.Location = new System.Drawing.Point(33, 500);
             this.lblCalculo.Name = "lblCalculo";
-            this.lblCalculo.Size = new System.Drawing.Size(18, 20);
+            this.lblCalculo.Size = new System.Drawing.Size(21, 20);
             this.lblCalculo.TabIndex = 5;
             this.lblCalculo.Text = "   ";
             // 

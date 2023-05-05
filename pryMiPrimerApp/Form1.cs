@@ -49,8 +49,7 @@ namespace pryMiPrimerApp
             lblCalculo.Text = varMonto.ToString();
 
             //concatenar
-            lblCalculo.Text = "Alquiler:" + varAlquiler.ToString() + "Deposito:" + varDeposito.ToString() + "Impuestos:" + varImpuestos.ToString() + "Comida:" + varComida.ToString() + "Monto:" + varMonto.ToString();
-
+            lblCalculo.Text = "Resultado: " + varMonto.ToString();
         }
 
     }
