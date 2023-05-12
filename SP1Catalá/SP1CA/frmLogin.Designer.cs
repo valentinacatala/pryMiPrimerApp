@@ -34,15 +34,18 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.cmdAceptar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
+            this.lblModulo = new System.Windows.Forms.Label();
+            this.lstModulo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(28, 44);
+            this.lblUsuario.Location = new System.Drawing.Point(11, 34);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(67, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(57, 17);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -50,31 +53,35 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(28, 103);
+            this.lblContraseña.Location = new System.Drawing.Point(11, 85);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(95, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(81, 17);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(101, 42);
+            this.txtUsuario.Location = new System.Drawing.Point(70, 34);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(108, 20);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(129, 101);
+            this.txtContraseña.Location = new System.Drawing.Point(96, 85);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(138, 22);
+            this.txtContraseña.Size = new System.Drawing.Size(104, 20);
             this.txtContraseña.TabIndex = 3;
             // 
             // cmdAceptar
             // 
-            this.cmdAceptar.Location = new System.Drawing.Point(311, 33);
+            this.cmdAceptar.Location = new System.Drawing.Point(233, 54);
+            this.cmdAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdAceptar.Name = "cmdAceptar";
-            this.cmdAceptar.Size = new System.Drawing.Size(103, 31);
+            this.cmdAceptar.Size = new System.Drawing.Size(77, 25);
             this.cmdAceptar.TabIndex = 4;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
@@ -82,25 +89,48 @@
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.Location = new System.Drawing.Point(311, 91);
+            this.cmdCancelar.Location = new System.Drawing.Point(233, 107);
+            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(103, 32);
+            this.cmdCancelar.Size = new System.Drawing.Size(77, 26);
             this.cmdCancelar.TabIndex = 5;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
             this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
+            // lblModulo
+            // 
+            this.lblModulo.AutoSize = true;
+            this.lblModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo.Location = new System.Drawing.Point(11, 135);
+            this.lblModulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblModulo.Name = "lblModulo";
+            this.lblModulo.Size = new System.Drawing.Size(54, 17);
+            this.lblModulo.TabIndex = 6;
+            this.lblModulo.Text = "Modulo";
+            // 
+            // lstModulo
+            // 
+            this.lstModulo.FormattingEnabled = true;
+            this.lstModulo.Location = new System.Drawing.Point(70, 135);
+            this.lstModulo.Name = "lstModulo";
+            this.lstModulo.Size = new System.Drawing.Size(108, 21);
+            this.lstModulo.TabIndex = 7;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 164);
+            this.ClientSize = new System.Drawing.Size(327, 176);
+            this.Controls.Add(this.lstModulo);
+            this.Controls.Add(this.lblModulo);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLogin";
             this.Text = "LOGIN";
             this.ResumeLayout(false);
@@ -116,6 +146,8 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button cmdAceptar;
         private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Label lblModulo;
+        private System.Windows.Forms.ComboBox lstModulo;
     }
 }
 

@@ -37,17 +37,19 @@
             this.lblBienvenidoAlSistema.AutoSize = true;
             this.lblBienvenidoAlSistema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBienvenidoAlSistema.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(69, 75);
+            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(43, 58);
+            this.lblBienvenidoAlSistema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBienvenidoAlSistema.Name = "lblBienvenidoAlSistema";
-            this.lblBienvenidoAlSistema.Size = new System.Drawing.Size(368, 48);
+            this.lblBienvenidoAlSistema.Size = new System.Drawing.Size(299, 39);
             this.lblBienvenidoAlSistema.TabIndex = 0;
             this.lblBienvenidoAlSistema.Text = "Bienvenido al Sistema";
             // 
             // cmdAceptar
             // 
-            this.cmdAceptar.Location = new System.Drawing.Point(215, 161);
+            this.cmdAceptar.Location = new System.Drawing.Point(139, 121);
+            this.cmdAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdAceptar.Name = "cmdAceptar";
-            this.cmdAceptar.Size = new System.Drawing.Size(75, 23);
+            this.cmdAceptar.Size = new System.Drawing.Size(56, 28);
             this.cmdAceptar.TabIndex = 1;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
@@ -55,11 +57,12 @@
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 231);
+            this.ClientSize = new System.Drawing.Size(385, 188);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.lblBienvenidoAlSistema);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmInicio";
             this.Text = "Inicio";
             this.ResumeLayout(false);
