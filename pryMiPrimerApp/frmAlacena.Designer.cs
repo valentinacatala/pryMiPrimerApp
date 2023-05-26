@@ -65,7 +65,7 @@
             // dtpFechaDeVencimiento
             // 
             this.dtpFechaDeVencimiento.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaDeVencimiento.Location = new System.Drawing.Point(173, 279);
+            this.dtpFechaDeVencimiento.Location = new System.Drawing.Point(177, 282);
             this.dtpFechaDeVencimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaDeVencimiento.Name = "dtpFechaDeVencimiento";
             this.dtpFechaDeVencimiento.Size = new System.Drawing.Size(265, 26);
