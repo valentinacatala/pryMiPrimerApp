@@ -19,8 +19,6 @@ namespace SP1CA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmLogin ventanafrmLogin = new frmLogin();
-            ventanafrmLogin.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
