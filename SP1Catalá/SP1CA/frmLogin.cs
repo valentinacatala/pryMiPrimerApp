@@ -22,30 +22,68 @@ namespace SP1CA
         {
             int intentos = 0;
 
-            if ((txtUsuario.Text == "Administrador" &&
-            txtContraseña.Text == "adm135$")
-            (txtUsuario.Text == "Operador" &&
-            txtContraseña.Text == "ope246$"))
+            if ((txtUsuario.Text=="Adm")& (txtContraseña.Text=="@1a"))
+            {
+                lstModulo.Items.Add("ADM");
+                lstModulo.Items.Add("COM");
+                lstModulo.Items.Add("VTA");
 
-            {
-                this.Hide();//oculta este formulario
-            frmInicio f = new frmInicio(); //crea el formulario
-            f.ShowDialog(); //visualiza y ejecuta el formulario
-            this.Show(); //visualiza nuevamente el formulario
+                this.Hide();
+                frmInicio f = new frmInicio();
+                f.ShowDialog();
+                this.Show();
             }
+            else if ((txtUsuario.Text=="John")& (txtContraseña.Text== "*2b"))
             {
-            MessageBox.Show("Datos incorrectos.Acceso Denegado");
-            intentos++;
-                if (intentos == 3) ;
+                lstModulo.Items.Add("SIST");
+
+                this.Hide();
+                frmInicio f = new frmInicio();
+                f.ShowDialog();
+                this.Show();
             }
+            else if ((txtUsuario.Text=="Ceci") & (txtContraseña.Text=="@3c"))
             {
-                this.Close();
+                lstModulo.Items.Add("ADM");
+                lstModulo.Items.Add("VTA");
+
+                this.Hide();
+                frmInicio f = new frmInicio();
+                f.ShowDialog();
+                this.Show();
+            }
+            else if ((txtUsuario.Text=="God")& (txtContraseña.Text=="@#4d"))
+            {
+                lstModulo.Items.Add("ADM");
+                lstModulo.Items.Add("SIST");
+                lstModulo.Items.Add("COM");
+                lstModulo.Items.Add("VTA");
+
+                this.Hide();
+                frmInicio f = new frmInicio();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado");
+                intentos++;
+                if (intentos==2)
+                {
+                    this.Close();
+                }
             }
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtContraseña.PasswordChar = '#';
+            txtContraseña.UseSystemPasswordChar = true;
         }
     }
 }
