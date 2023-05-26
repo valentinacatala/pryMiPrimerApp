@@ -112,6 +112,7 @@
             // 
             // lstLugar
             // 
+            this.lstLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstLugar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstLugar.FormattingEnabled = true;
             this.lstLugar.Items.AddRange(new object[] {
@@ -202,6 +203,7 @@
             // 
             // lstProducto
             // 
+            this.lstProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstProducto.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstProducto.FormattingEnabled = true;
             this.lstProducto.Location = new System.Drawing.Point(97, 95);
