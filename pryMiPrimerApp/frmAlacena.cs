@@ -36,14 +36,19 @@ namespace pryMiPrimerApp
 
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
-            varLugar = txtLugar.Text;
+            varLugar = lstLugar.Text;
             varProducto = lstProducto.Text;
             varCantidad = Convert.ToInt32(nudCantidad.Value);
             //varCantidad= int.Parse(nudCantidad.Value);
             varTipo = "";
             varFechaDeVencimiento = dtpFechaDeVencimiento.Value;
 
-            lstAlacena.Items.Add(varLugar + varProducto + varCantidad);
+            lstAlacena.Items.Add(varCantidad + varProducto + varLugar);
+
+            if (chkCaduca.Checked)
+            {
+                lstAlacena.Items.Add("El producto va a caducar" + varFechaDeVencimiento);
+            }
         }
         private void dtpFechaDeVencimiento_ValueChanged(object sender, EventArgs e)
         {
@@ -51,6 +56,11 @@ namespace pryMiPrimerApp
         }
 
         private void lstAlacena_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstAlacena_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -67,7 +77,7 @@ namespace pryMiPrimerApp
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+        
         }
     }
 }
