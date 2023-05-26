@@ -215,6 +215,7 @@
             this.cmdCancelar.TabIndex = 3;
             this.cmdCancelar.Text = "CANCELAR";
             this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // cmdCalcular
             // 

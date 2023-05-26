@@ -248,6 +248,7 @@
             this.cmdCancelar.TabIndex = 12;
             this.cmdCancelar.Text = "CANCELAR";
             this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // lstAlacena
             // 

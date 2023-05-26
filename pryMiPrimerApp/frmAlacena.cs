@@ -65,6 +65,16 @@ namespace pryMiPrimerApp
 
         }
 
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            frmAlacena.close();
+        }
+
+        private static void close()
+        {
+            throw new NotImplementedException();
+        }
+
         private void frmAlacena_Load(object sender, EventArgs e)
         {
             lstProducto.Items.Add("Azucar");

@@ -52,5 +52,14 @@ namespace pryMiPrimerApp
             lblCalculo.Text = "Resultado: " + varMonto.ToString();
         }
 
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            formGestionDeGastosMensuales.close();
+        }
+
+        private static void close()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
