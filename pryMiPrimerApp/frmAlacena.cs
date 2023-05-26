@@ -47,7 +47,7 @@ namespace pryMiPrimerApp
 
             if (chkCaduca.Checked)
             {
-                lstAlacena.Items.Add("El producto va a caducar" + varFechaDeVencimiento);
+                lstAlacena.Items.Add("El producto va a caducar el " + varFechaDeVencimiento);
             }
         }
         private void dtpFechaDeVencimiento_ValueChanged(object sender, EventArgs e)
