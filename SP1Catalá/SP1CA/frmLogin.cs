@@ -91,7 +91,19 @@ namespace SP1CA
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            txtContraseña.
+
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            base.OnKeyPress(e);
+            if (e.KeyChar
+                != (char)Keys.Back)
+            {
+                e.Handled = true;
+                Text += "#";
+                SelectionStart = Text.Length;
+            }
         }
     }
 }
