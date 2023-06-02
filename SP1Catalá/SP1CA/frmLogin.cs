@@ -13,6 +13,8 @@ namespace SP1CA
 {
     public partial class frmLogin : Form
     {
+        private int errores;
+
         public frmLogin()
         {
             InitializeComponent();
@@ -20,59 +22,66 @@ namespace SP1CA
 
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
-            int intentos = 0;
-
-            if ((txtUsuario.Text=="Adm")& (txtContraseña.Text=="@1a"))
+            string usuario = txtUsuario.Text;
+            string contrasena = txtContraseña.Text;
+            string modulo = lstModulo.Text;
+            frmInicio inicio = new frmInicio();
+            switch (usuario)
             {
-                lstModulo.Items.Add("ADM");
-                lstModulo.Items.Add("COM");
-                lstModulo.Items.Add("VTA");
+                case "Administrador":
+                    if (contrasena == "@la" && (modulo == "ADM" || modulo == "COM" || modulo == "VTA" ))
+                    {
+                        errores = 0;
+                        this.Hide();
+                        inicio.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrectas para el modulo seleccionado");
+                        errores++;
+                    }
+                    break;
+                case "John":
+                    if (contrasena == "*2b" && modulo == "SIST")
+                    {
+                        errores = 0;
+                        this.Hide();
+                        inicio.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrectas para el modulo seleccionado");
+                        errores++;
+                    }
+                    break;
+                case "Ceci":
+                    if (contrasena == "*@3c" && (modulo =="ADM" || modulo == "VTA"))
+                    {
+                        errores = 0;
+                        this.Hide();
+                        inicio.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrectas para el modulo seleccionado");
+                        errores++;
+                    }
+                    break;
+                case "God":
+                    if (contrasena == "*@#4d" && (modulo == "ADM" || modulo == "COM" || modulo == "VTA" || modulo == "SIST"))
+                    {
+                        errores = 0;
+                        this.Hide();
+                        inicio.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrectas para el modulo seleccionado");
+                        errores++;
+                    }
+                    break;
+            }
 
-                this.Hide();
-                frmInicio f = new frmInicio();
-                f.ShowDialog();
-                this.Show();
-            }
-            else if ((txtUsuario.Text=="John")& (txtContraseña.Text== "*2b"))
-            {
-                lstModulo.Items.Add("SIST");
-
-                this.Hide();
-                frmInicio f = new frmInicio();
-                f.ShowDialog();
-                this.Show();
-            }
-            else if ((txtUsuario.Text=="Ceci") & (txtContraseña.Text=="@3c"))
-            {
-                lstModulo.Items.Add("ADM");
-                lstModulo.Items.Add("VTA");
-
-                this.Hide();
-                frmInicio f = new frmInicio();
-                f.ShowDialog();
-                this.Show();
-            }
-            else if ((txtUsuario.Text=="God")& (txtContraseña.Text=="@#4d"))
-            {
-                lstModulo.Items.Add("ADM");
-                lstModulo.Items.Add("SIST");
-                lstModulo.Items.Add("COM");
-                lstModulo.Items.Add("VTA");
-
-                this.Hide();
-                frmInicio f = new frmInicio();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado");
-                intentos++;
-                if (intentos==2)
-                {
-                    this.Close();
-                }
-            }
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
@@ -82,8 +91,7 @@ namespace SP1CA
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            txtContraseña.PasswordChar = '#';
-            txtContraseña.UseSystemPasswordChar = true;
+            txtContraseña.
         }
     }
 }
