@@ -38,7 +38,7 @@
             this.lblBienvenidoAlSistema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBienvenidoAlSistema.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenidoAlSistema.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(47, 85);
+            this.lblBienvenidoAlSistema.Location = new System.Drawing.Point(43, 84);
             this.lblBienvenidoAlSistema.Name = "lblBienvenidoAlSistema";
             this.lblBienvenidoAlSistema.Size = new System.Drawing.Size(368, 48);
             this.lblBienvenidoAlSistema.TabIndex = 0;

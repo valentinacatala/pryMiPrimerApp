@@ -14,6 +14,7 @@ namespace SP1CA
     public partial class frmLogin : Form
     {
         private int errores;
+        private int SelectionStart;
 
         public frmLogin()
         {
@@ -91,19 +92,13 @@ namespace SP1CA
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            txtContraseña.PasswordChar = '#';
+            Controls.Add(txtContraseña);
         }
 
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
-            base.OnKeyPress(e);
-            if (e.KeyChar
-                != (char)Keys.Back)
-            {
-                e.Handled = true;
-                Text += "#";
-                SelectionStart = Text.Length;
-            }
+
         }
     }
 }

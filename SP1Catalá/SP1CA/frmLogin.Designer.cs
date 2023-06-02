@@ -44,7 +44,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lblUsuario.Location = new System.Drawing.Point(15, 42);
+            this.lblUsuario.Location = new System.Drawing.Point(29, 46);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(67, 20);
             this.lblUsuario.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(15, 105);
+            this.lblContraseña.Location = new System.Drawing.Point(19, 105);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(95, 20);
             this.lblContraseña.TabIndex = 1;
@@ -64,17 +64,17 @@
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtUsuario.Location = new System.Drawing.Point(93, 39);
+            this.txtUsuario.Location = new System.Drawing.Point(128, 43);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(137, 27);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtContraseña.Location = new System.Drawing.Point(116, 102);
+            this.txtContraseña.Location = new System.Drawing.Point(128, 102);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(137, 27);
@@ -109,7 +109,7 @@
             // 
             this.lblModulo.AutoSize = true;
             this.lblModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo.Location = new System.Drawing.Point(15, 163);
+            this.lblModulo.Location = new System.Drawing.Point(29, 155);
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Size = new System.Drawing.Size(63, 20);
             this.lblModulo.TabIndex = 6;
@@ -126,10 +126,10 @@
             "COM",
             "VTA",
             "SIST"});
-            this.lstModulo.Location = new System.Drawing.Point(93, 155);
+            this.lstModulo.Location = new System.Drawing.Point(128, 155);
             this.lstModulo.Margin = new System.Windows.Forms.Padding(4);
             this.lstModulo.Name = "lstModulo";
-            this.lstModulo.Size = new System.Drawing.Size(143, 28);
+            this.lstModulo.Size = new System.Drawing.Size(137, 28);
             this.lstModulo.TabIndex = 7;
             // 
             // frmLogin
