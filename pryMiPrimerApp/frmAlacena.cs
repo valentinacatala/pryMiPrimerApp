@@ -43,7 +43,7 @@ namespace pryMiPrimerApp
             varTipo = "";
             varFechaDeVencimiento = dtpFechaDeVencimiento.Value;
 
-            lstAlacena.Items.Add(varCantidad + varProducto + varLugar);
+            lstAlacena.Items.Add(varCantidad + " " + varProducto + " en la " + varLugar);
 
             if (chkCaduca.Checked)
             {
